@@ -50,8 +50,13 @@ valistArray;\
 
 #import "EGODatabase.h"
 
+#ifndef EGODatabaseDebugLog
 #define EGODatabaseDebugLog 1
+#endif
+
+#ifndef EGODatabaseLockLog
 #define EGODatabaseLockLog 0
+#endif
 
 #if EGODatabaseDebugLog
 #define EGODBDebugLog(s,...) NSLog(s, ##__VA_ARGS__)
